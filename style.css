@@ -1,0 +1,179 @@
+/*이 모든 코드는 stackoverflow + MDN Web Docs 에서 도움을 받았음을 알립니다.*/
+
+@keyframes focus-in {
+  0% {
+            filter: blur(15px);
+    opacity: 0;
+  }
+  50% {
+            filter: blur(0px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1
+  }
+}
+
+body {
+    background: #001;
+    color: #eef;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+
+    overflow: hidden;
+    animation: focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+body > div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+body > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: min(480px, calc(100% - 5rem));
+    height: min(max-content, calc(100% - 5rem));
+    padding: 1.5rem;
+
+    background: linear-gradient(#123, #112);
+    border: 1px solid #eef4;
+    box-shadow: 0 0 0 1px #0007;
+    border-radius: 5px;
+
+    transition: 5s;
+    user-select: none;
+
+    transform: scale(1, 1);
+    overflow-x: visible;
+    overflow-y: auto;
+}
+
+
+#못참지 {
+    font-size: 0.75rem;
+    opacity: .5;
+}
+/*
+.intro {
+    transform: scale(0.5, 0.5); filter: blur(20px); opacity: 0;
+}*/
+
+.topic1 {
+    background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+    color: #eef;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid rgba(238, 238, 255, 0.426);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.54);
+    border-radius: 5px;
+    outline: none;
+    width: calc(100% - 2em);
+    margin: 1em -1.5em 0 -1em;
+    padding: 2em;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+.topic2 {
+    background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+    color: #eef;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid rgba(238, 238, 255, 0.426);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.54);
+    border-radius: 5px;
+    outline: none;
+    width: calc(100% - 2em);
+    margin: 1em -1.5em 0 -1em;
+    padding: 2em;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+.topic3 {
+    background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+    color: #eef;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid rgba(238, 238, 255, 0.426);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.54);
+    border-radius: 5px;
+    outline: none;
+    width: calc(100% - 2em);
+    margin: 1em -1.5em 0 -1em;
+    padding: 2em;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+.topic4 {
+    background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+    color: #eef;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid rgba(238, 238, 255, 0.426);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.54);
+    border-radius: 5px;
+    outline: none;
+    width: calc(100% - 2em);
+    margin: 1em -1.5em 0 -1em;
+    padding: 2em;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+.topic1:hover {
+    background-color: #e91e63
+}
+.topic2:hover {
+    background-color: #e9c820
+}
+.topic3:hover {
+    background-color: #20e99c
+}
+.topic4:hover {
+    background-color: #20b7e9
+}
+/*.topic:active {
+    background: linear-gradient(blue, pink);
+    box-shadow: 0 0 0 1px #0007;
+    color: #eef7;
+}*/
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background: transparent;
+}
+
+.app {
+    background: linear-gradient(#222, #111);
+    color: #eef;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid #eef4;
+    box-shadow: 0 0 0 1px #0007;
+    border-radius: 5px;
+    outline: none;
+    width: calc(100% - 2em);
+    height: 3em;
+    min-height: 3em;
+    margin: 1em -1em 0 -1em;
+    padding: 1em;
+    text-decoration: none;
+
+}
+
+
+
